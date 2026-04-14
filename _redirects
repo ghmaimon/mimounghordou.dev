@@ -1,2 +1,1 @@
-# Redirect www to apex
-https://www.mimounghordou.com/* https://mimounghordou.com/:splat 301
+# Redirects are handled via Cloudflare Pages custom domain settings
