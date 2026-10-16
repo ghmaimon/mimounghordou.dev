@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>mimounghordou.com | Mimoun Ghordou | Software Engineer at Oracle</title>
-  <meta name="description" content="Software Engineer at Oracle's Java Platform Group. Building tools that multiply engineering productivity. JDK VM Team, systems programming, and full-stack internal platforms.">
-  <meta property="og:title" content="Mimoun Ghordou | Software Engineer at Oracle">
-  <meta property="og:description" content="Software Engineer at Oracle's JDK VM Team. Building tools that multiply engineering productivity.">
+  <title>mimounghordou.com | Mimoun Ghordou | Software Engineer, Co-founder of TajirPro</title>
+  <meta name="description" content="Software engineer who builds and ships full-stack products. Co-founder of TajirPro, a SaaS for Moroccan retailers; JDK VM Team at Oracle's Java Platform Group; co-creator of CrystalFlow and FloTable.">
+  <meta property="og:title" content="Mimoun Ghordou | Software Engineer, Co-founder of TajirPro">
+  <meta property="og:description" content="Builds and ships full-stack products (Spring Boot, PostgreSQL, Next.js). Co-founder of TajirPro. JDK VM Team at Oracle. Co-creator of CrystalFlow and FloTable.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mimounghordou.com">
   <meta name="twitter:card" content="summary_large_image">
@@ -27,8 +27,9 @@
     <div class="nav-inner">
       <a href="#" class="nav-logo">mimounghordou<span>.com</span></a>
       <ul class="nav-links">
+        <li><a href="#products">Products</a></li>
         <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#opensource">Open Source</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#github">GitHub</a></li>
         <li><a href="#contact" class="nav-cta">Contact</a></li>
@@ -41,8 +42,9 @@
 
   <!-- Mobile nav -->
   <div class="nav-mobile" id="nav-mobile">
+    <a href="#products">Products</a>
     <a href="#experience">Experience</a>
-    <a href="#projects">Projects</a>
+    <a href="#opensource">Open Source</a>
     <a href="#skills">Skills</a>
     <a href="#education">Education</a>
     <a href="#github">GitHub</a>
@@ -57,7 +59,7 @@
           <div class="fade-up">
             <div class="hero-badge">
               <span class="dot"></span>
-              Software Engineer @ Oracle
+              Software Engineer · Co-founder of TajirPro · JDK VM Team @ Oracle
             </div>
           </div>
 
@@ -66,9 +68,11 @@
           </h1>
 
           <p class="hero-sub fade-up">
-            Software Engineer at Oracle's Java Platform Group, working on the JDK.
-            I build tools that multiply engineering productivity, from systems-level 
-            code to full-stack internal platforms.
+            I build and ship full-stack products. Co-founder of
+            <a href="https://tajirpro.ma" target="_blank" rel="noopener noreferrer" class="hero-link">TajirPro</a>,
+            a SaaS used by Moroccan retailers, and core contributor to FLO, HandOff and Atlas.
+            By day I work on JDK LTS releases at Oracle's Java Platform Group, where I built the
+            team's backport automation platform and its AI agent tooling.
           </p>
 
           <div class="hero-buttons fade-up">
@@ -96,25 +100,149 @@
 
       <div class="hero-stats stagger">
         <div class="hero-stat">
-          <div class="hero-stat-value" data-count="3">3+</div>
+          <div class="hero-stat-value">4</div>
+          <div class="hero-stat-label">Products Shipped</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value">740+</div>
+          <div class="hero-stat-label">Commits on TajirPro</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value">3+</div>
           <div class="hero-stat-label">Years at Oracle</div>
         </div>
         <div class="hero-stat">
-          <div class="hero-stat-value">68%</div>
-          <div class="hero-stat-label">Task Automation</div>
+          <div class="hero-stat-value">100%</div>
+          <div class="hero-stat-label">Backport Automation</div>
         </div>
         <div class="hero-stat">
-          <div class="hero-stat-value">40%</div>
-          <div class="hero-stat-label">Productivity Gain</div>
+          <div class="hero-stat-value">2</div>
+          <div class="hero-stat-label">Open Source Libraries</div>
         </div>
-        <div class="hero-stat">
-          <div class="hero-stat-value">60%</div>
-          <div class="hero-stat-label">Test Suite Expansion</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Products ═══ -->
+  <section class="section" id="products">
+    <div class="container">
+      <div class="fade-up">
+        <div class="section-label"><span class="section-num">// 01.</span> Products &amp; Client Work</div>
+        <h2 class="section-title">What I've Shipped</h2>
+        <p class="section-desc">Production software built with Fladeed, a three-engineer software studio in Morocco: a SaaS I co-founded, a multi-tenant platform, an internal tool, and a consulting delivery for an Italian client.</p>
+      </div>
+
+      <div class="projects-grid stagger">
+
+        <!-- TajirPro -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-name">TajirPro</div>
+            <span class="project-status active">
+              <span class="dot" style="width:6px;height:6px"></span>
+              In Production
+            </span>
+          </div>
+          <div class="project-role">Co-Founder · Fladeed · Mar 2026 – Present</div>
+          <p class="project-desc">Multi-tenant ERP-lite with point of sale for Moroccan retailers: inventory across stores and warehouses, purchases, quotes, refunds, customer credit and cheques, cached analytics and plan-based entitlements. The UI ships in Darija, Arabic, French and English with full RTL.</p>
+          <ul class="project-points">
+            <li>Top committer (<span class="highlight-metric">740+</span> commits) across migrations, Spring services, REST APIs, the Next.js UI and receipt/invoice printing; owned pricing and product direction too</li>
+            <li>Tenant isolation in three layers: JWT claims, workspace-scoped repositories, PostgreSQL triggers</li>
+            <li><span class="highlight-metric">2,000+</span> backend tests on Testcontainers with query-count guards; OpenAPI-generated client; Cloudflare Workers deployment</li>
+          </ul>
+          <div class="project-tech">
+            <span class="tech-tag">Java 21</span>
+            <span class="tech-tag">Spring Boot 3</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">Next.js 16</span>
+            <span class="tech-tag">React 19</span>
+            <span class="tech-tag">TypeScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://tajirpro.ma" target="_blank" rel="noopener noreferrer" class="project-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+              tajirpro.ma
+            </a>
+          </div>
         </div>
-        <div class="hero-stat">
-          <div class="hero-stat-value">4</div>
-          <div class="hero-stat-label">Open Source Projects</div>
+
+        <!-- FLO -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-name">FLO</div>
+            <span class="project-status completed">Shipped</span>
+          </div>
+          <div class="project-role">Backend Engineer · Fladeed · 2024 – 2026</div>
+          <p class="project-desc">Multi-tenant e-commerce operations SaaS: an isolated workspace per tenant, Stripe billing, Google OAuth, shop-builder and delivery-carrier integrations, a visual workflow builder and a UI in four languages.</p>
+          <ul class="project-points">
+            <li>Owned the workspace and multi-tenancy model and attribute-based access control: roles, permissions, workspace access tokens</li>
+            <li>Built the order lifecycle: status transitions, history and checks, and a workflow engine triggered on order creation</li>
+            <li><span class="highlight-metric">600+</span> backend tests; FloTable was extracted from this codebase</li>
+          </ul>
+          <div class="project-tech">
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">Spring Boot</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">Next.js</span>
+            <span class="tech-tag">TypeScript</span>
+          </div>
+          <div class="project-links"></div>
         </div>
+
+        <!-- HandOff -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-name">HandOff</div>
+            <span class="project-status active">
+              <span class="dot" style="width:6px;height:6px"></span>
+              In Production
+            </span>
+          </div>
+          <div class="project-role">Sole Developer · Fladeed · Oct 2026</div>
+          <p class="project-desc">Lead-to-call scheduling tool used daily by a sales team, built and shipped in nine days at zero hosting cost. Leads arrive from the website and Meta Lead Ads, schedulers book technical calls from a free-slot grid, and the least-loaded engineer is assigned automatically.</p>
+          <ul class="project-points">
+            <li>Every rule lives in PostgreSQL: row-level security, ~50 security-definer functions, an exclusion constraint that makes double booking impossible, generic undo via a change log</li>
+            <li>Outbox email pipeline on pg_cron and Edge Functions; PDF quotes through Cloudflare Browser Rendering</li>
+            <li><span class="highlight-metric">540</span> pgTAP assertions and <span class="highlight-metric">193</span> Vitest tests, written before the code</li>
+          </ul>
+          <div class="project-tech">
+            <span class="tech-tag">Next.js 16</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">Supabase</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">Cloudflare Workers</span>
+          </div>
+          <div class="project-links">
+            <a href="https://handoff.fladeed.com" target="_blank" rel="noopener noreferrer" class="project-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+              handoff.fladeed.com
+            </a>
+          </div>
+        </div>
+
+        <!-- Atlas -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-name">Atlas</div>
+            <span class="project-status completed">Delivered</span>
+          </div>
+          <div class="project-role">Backend Lead · Consulting for Kimia S.p.A., Italy · Sep 2025</div>
+          <p class="project-desc">T-beam module of a structural-calculation platform for civil engineers, delivered in six days inside the client's monorepo. The spec existed only as Excel workbooks implementing the CNR-DT 200 FRP guideline.</p>
+          <ul class="project-points">
+            <li>Translated the workbooks into 8 calculation services and immutable records; replaced the manual Goal Seek with a bracketed Brent root-finder; generated the DOCX calculation report</li>
+            <li>Proved Excel parity with <span class="highlight-metric">44</span> parameterized tests and a no-mock end-to-end test pinning all 21 outputs</li>
+            <li>Led a team of three, reviewed and merged 16 PRs, landed upstream with zero changes to the client's framework</li>
+          </ul>
+          <div class="project-tech">
+            <span class="tech-tag">Java 24</span>
+            <span class="tech-tag">Spring Boot</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">Next.js</span>
+            <span class="tech-tag">React</span>
+          </div>
+          <div class="project-links"></div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -123,9 +251,9 @@
   <section class="section" id="experience">
     <div class="container">
       <div class="fade-up">
-        <div class="section-label"><span class="section-num">// 01.</span> Experience</div>
+        <div class="section-label"><span class="section-num">// 02.</span> Experience</div>
         <h2 class="section-title">Where I've Worked</h2>
-        <p class="section-desc">3+ years building developer tools, JDK infrastructure, and AI-powered automation at Oracle.</p>
+        <p class="section-desc">Software engineer at Oracle's Java Platform Group since 2023, alongside freelance product work from 2024 to 2026.</p>
       </div>
 
       <div class="timeline stagger">
@@ -134,15 +262,28 @@
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-period">Sep 2025 – Present</div>
-          <div class="timeline-role">Member of Technical Staff</div>
-          <div class="timeline-company">Oracle · JDK VM Team, Java Platform Group · Morocco</div>
+          <div class="timeline-role">Software Engineer</div>
+          <div class="timeline-company">Oracle · Member of Technical Staff · JDK VM Team, Java Platform Group · Morocco</div>
           <ul class="timeline-highlights">
-            <li>Extended the backport tracking platform with a <strong>Bug Fixing Mirroring</strong> layer synced to Jira, providing unified per-engineer productivity reports</li>
-            <li>Built a <strong>Dependency Analysis Engine</strong> that maps cross-patch file-level dependencies to enforce clean backport ordering</li>
-            <li>Introduced Oracle's internal AI coding assistant to the team and delivered full knowledge-transfer on AI-assisted development workflows</li>
-            <li>Built a <strong>team agent skills catalog</strong> covering internal tools, Jira, GitHub, GitLab, and team practices, with adapters to export skills optimized for each AI platform</li>
-            <li>Led design of an <strong>AI agent for resolving patch conflicts</strong>, raising backport automation from <span class="highlight-metric">68% → 100%</span></li>
-            <li>Continued contributions to JDK LTS: VM tests, bug investigation, regression tests, and source-level fixes</li>
+            <li>Led the design of an <strong>AI agent for backport conflict resolution</strong>: deterministic cherry-pick, build and test, bounded AI repair, pull request for human review. Backport automation <span class="highlight-metric">68% → 100%</span></li>
+            <li>Built a <strong>dependency analysis engine</strong> that traces file-level dependencies across patches to enforce a clean backport order, plus a Jira-synced bug-fixing mirror for per-engineer reporting</li>
+            <li>Introduced AI coding agents to the team and built its <strong>agent skills catalog</strong> with adapters for Copilot, Cursor, Codex and Claude</li>
+            <li>Took my Java knowledge down to the JDK level: HotSpot behaviour, bytecode and class verification, jtreg, and how LTS releases diverge, by reading, testing and fixing the JDK itself</li>
+          </ul>
+        </div>
+
+        <!-- Freelance -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-period">Jun 2024 – Oct 2026</div>
+          <div class="timeline-role">Freelance Full-Stack Software Engineer</div>
+          <div class="timeline-company">Remote · Morocco · alongside the Oracle role</div>
+          <ul class="timeline-highlights">
+            <li><strong>TajirPro</strong> (2026): lead full-stack engineer and top committer (<span class="highlight-metric">740+</span> commits) of a multi-tenant SaaS for Moroccan retailers; also owned pricing and product direction</li>
+            <li><strong>HandOff</strong> (2026): sole developer of a lead-to-call scheduling tool, shipped in nine days at zero hosting cost with every rule enforced in PostgreSQL</li>
+            <li><strong>FLO</strong> (2024 – 2026): backend of a multi-tenant e-commerce operations SaaS: workspaces, attribute-based access control, order workflow engine</li>
+            <li><strong>Atlas</strong> (2025): backend lead for the T-beam module of a structural-calculation platform, consulting for Kimia S.p.A.; Excel spec to tested Java in six days</li>
+            <li>Details in <a href="#products" class="inline-link">Products &amp; Client Work</a></li>
           </ul>
         </div>
 
@@ -150,14 +291,12 @@
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="timeline-period">Sep 2023 – Sep 2025</div>
-          <div class="timeline-role">Junior Member of Technical Staff</div>
-          <div class="timeline-company">Oracle · JDK VM Team, Java Platform Group · Morocco</div>
+          <div class="timeline-role">Software Engineer</div>
+          <div class="timeline-company">Oracle · Junior Member of Technical Staff · JDK VM Team, Java Platform Group · Morocco</div>
           <ul class="timeline-highlights">
-            <li>Designed and built a full-stack <strong>internal backport tracking tool</strong> integrating with JBS (Java Bug System) and Oracle's internal GitLab, improving team productivity by <span class="highlight-metric">40%</span></li>
-            <li>Implemented a backport analysis engine that auto-applied clean patches, <strong>automating <span class="highlight-metric">68%</span></strong> of the team's core backporting work</li>
-            <li>Expanded a closed JDK 8 release test suite by <span class="highlight-metric">60%</span> by porting tests from JDK 17</li>
-            <li>Developed VM tests, investigated and triaged JDK bugs, created regression tests, and fixed bugs in JDK source across LTS releases</li>
-            <li>Managed test infrastructure (cloud + physical labs), deployed OpenGrok for the Java Platform Group, and built CI/CD pipelines</li>
+            <li>Designed and built the team's <strong>backport tracking platform</strong> (Next.js, Spring Boot, PostgreSQL) integrating JBS and Orahub: patch analysis that auto-applies clean patches (<span class="highlight-metric">68%</span> of backports), blocker tree views, sprint reports. Team productivity up <span class="highlight-metric">40%</span></li>
+            <li>Expanded a closed JDK 8 release's test suite by <span class="highlight-metric">60%</span> by porting JDK 17 tests into CI; investigated and fixed JDK bugs across LTS releases</li>
+            <li>Owned the JDK test infrastructure (cloud and physical labs), the group's OpenGrok deployment and the team's CI/CD pipelines</li>
           </ul>
         </div>
 
@@ -166,12 +305,10 @@
           <div class="timeline-dot"></div>
           <div class="timeline-period">Feb 2023 – Aug 2023</div>
           <div class="timeline-role">Software Engineer Intern</div>
-          <div class="timeline-company">Oracle · OCASS Team · Casablanca, Morocco</div>
+          <div class="timeline-company">Oracle · OCASS Team, Oracle Labs · Casablanca, Morocco</div>
           <ul class="timeline-highlights">
-            <li>Extended <strong>GCAS</strong> (GitHub Compliance Audit Service), Oracle's internal SaaS for auditing GitHub repositories for open-source policy compliance</li>
-            <li>Improved compliance checks by <span class="highlight-metric">40%</span> through new validations and enhancement of existing ones</li>
-            <li>Unblocked CI-level testing in the build pipeline (previously blocked) and added structured logging</li>
-            <li>Added UX features: audit re-trigger, execution method visibility, and UML-based compliance reporting</li>
+            <li>Extended <strong>GCAS</strong>, Oracle's cloud-native GitHub compliance audit service (Java 17, Dropwizard, OCI, Kubernetes), with four new compliance checks, improving coverage by <span class="highlight-metric">40%</span></li>
+            <li>Unblocked test execution in the CI pipeline, added service-health logging, and shipped dashboard features</li>
           </ul>
         </div>
 
@@ -179,13 +316,13 @@
     </div>
   </section>
 
-  <!-- ═══ Projects ═══ -->
-  <section class="section" id="projects">
+  <!-- ═══ Open Source ═══ -->
+  <section class="section" id="opensource">
     <div class="container">
       <div class="fade-up">
-        <div class="section-label"><span class="section-num">// 02.</span> Projects</div>
-        <h2 class="section-title">What I've Built</h2>
-        <p class="section-desc">Open source frameworks and tools, shipping real software used by real developers.</p>
+        <div class="section-label"><span class="section-num">// 03.</span> Open Source</div>
+        <h2 class="section-title">Libraries I Co-Created</h2>
+        <p class="section-desc">Two MIT-licensed libraries that came out of product work, plus earlier academic projects.</p>
       </div>
 
       <div class="projects-grid stagger">
@@ -199,7 +336,12 @@
               Active
             </span>
           </div>
-          <p class="project-desc">Open-source declarative framework for building visual workflow editors (DAG-based). Targets AI agent platforms, no-code automation tools, and data pipeline builders. Full architecture: decorator API, execution engine, and React component layer.</p>
+          <div class="project-role">Co-Creator · Execution Engine · 2025 – Present</div>
+          <p class="project-desc">Declarative framework for building visual workflow editors. Nodes declared with <code>@defineNode</code>, <code>@Input</code> and <code>@Output</code> decorators get a React Flow editor and an async execution engine with JSON serialization.</p>
+          <ul class="project-points">
+            <li>Owned the engine: compile-then-run execution plans, typed async events, four cancellation modes, and the control-flow nodes (if, switch, for, while, forEach) behind extensible interfaces</li>
+            <li><span class="highlight-metric">650+</span> Jest tests; benchmark suite guarding against regressions</li>
+          </ul>
           <div class="project-tech">
             <span class="tech-tag">TypeScript</span>
             <span class="tech-tag">React</span>
@@ -208,28 +350,25 @@
           <div class="project-links">
             <a href="https://crystalflow.dev" target="_blank" rel="noopener noreferrer" class="project-link">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
-              Website
-            </a>
-            <a href="https://github.com/fladeed/crystalflow" target="_blank" rel="noopener noreferrer" class="project-link">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-              Source
+              crystalflow.dev
             </a>
           </div>
         </div>
 
-        <!-- FlowTable -->
+        <!-- FloTable -->
         <div class="project-card">
           <div class="project-header">
-            <div class="project-name">FlowTable</div>
+            <div class="project-name">FloTable</div>
             <span class="project-status active">
               <span class="dot" style="width:6px;height:6px"></span>
               Active
             </span>
           </div>
-          <p class="project-desc">Open-source ERP-focused table component with advanced features: quick filters, saveable tab views with local/remote persistence, and deep customization. Built from scratch with zero external dependencies.</p>
+          <div class="project-role">Co-Creator · 2026 – Present · <code>npm i flotable</code></div>
+          <p class="project-desc">Zero-dependency React table component for ERP-style screens: typed column renderers, quick filters and filter pills, controlled and request modes with server-side pagination. Used in production by TajirPro and HandOff.</p>
           <div class="project-tech">
             <span class="tech-tag">TypeScript</span>
-            <span class="tech-tag">Next.js</span>
+            <span class="tech-tag">React</span>
           </div>
           <div class="project-links">
             <a href="https://flotable.fladeed.com" target="_blank" rel="noopener noreferrer" class="project-link">
@@ -240,6 +379,10 @@
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
               Source
             </a>
+            <a href="https://www.npmjs.com/package/flotable" target="_blank" rel="noopener noreferrer" class="project-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27,6.96 12,12.01 20.73,6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+              npm
+            </a>
           </div>
         </div>
 
@@ -247,9 +390,9 @@
         <div class="project-card">
           <div class="project-header">
             <div class="project-name">QuickSQL Compiler</div>
-            <span class="project-status completed">Completed</span>
+            <span class="project-status completed">Academic</span>
           </div>
-          <p class="project-desc">Full compiler pipeline (lexer → parser → code generator) for Oracle QuickSQL. Outputs standard SQL DDL, decoupling QuickSQL from Oracle DB. Extended the language specification beyond Oracle's official tooling.</p>
+          <p class="project-desc">Full compiler pipeline (lexer → parser → code generator) for Oracle QuickSQL, written in C. Outputs standard SQL DDL, decoupling QuickSQL from Oracle DB, and extends the language beyond Oracle's official tooling.</p>
           <div class="project-tech">
             <span class="tech-tag">C</span>
             <span class="tech-tag">Compiler Design</span>
@@ -261,9 +404,9 @@
         <div class="project-card">
           <div class="project-header">
             <div class="project-name">Medicine Traceability</div>
-            <span class="project-status completed">Completed</span>
+            <span class="project-status completed">Academic</span>
           </div>
-          <p class="project-desc">Blockchain-based pharmaceutical supply chain tracking system. Smart contracts ensure integrity from production to consumer. Full lifecycle: analysis, technology benchmarking, UML design, implementation.</p>
+          <p class="project-desc">Blockchain-based pharmaceutical supply chain tracking. Smart contracts ensure integrity from production to consumer. Full lifecycle: analysis, technology benchmarking, UML design, implementation.</p>
           <div class="project-tech">
             <span class="tech-tag">Solana</span>
             <span class="tech-tag">Web3.js</span>
@@ -280,9 +423,9 @@
   <section class="section" id="skills">
     <div class="container">
       <div class="fade-up">
-        <div class="section-label"><span class="section-num">// 03.</span> Skills</div>
+        <div class="section-label"><span class="section-num">// 04.</span> Skills</div>
         <h2 class="section-title">What I Work With</h2>
-        <p class="section-desc">From JVM internals to full-stack web, with a growing focus on AI-assisted development.</p>
+        <p class="section-desc">Spring Boot and PostgreSQL on the back, React and Next.js on the front, JVM internals underneath, and AI agents in the workflow.</p>
       </div>
 
       <div class="skills-grid stagger">
@@ -290,23 +433,72 @@
           <div class="skill-group-label purple">Languages</div>
           <div class="skill-items">
             <span class="skill-item">Java</span>
-            <span class="skill-item">C / C++</span>
             <span class="skill-item">TypeScript</span>
             <span class="skill-item">JavaScript</span>
             <span class="skill-item">SQL</span>
+            <span class="skill-item">C / C++</span>
             <span class="skill-item">Python</span>
           </div>
         </div>
 
         <div class="skill-group">
-          <div class="skill-group-label green">Frameworks</div>
+          <div class="skill-group-label green">Backend</div>
           <div class="skill-items">
             <span class="skill-item">Spring Boot</span>
-            <span class="skill-item">Next.js</span>
+            <span class="skill-item">Spring Security</span>
+            <span class="skill-item">Spring Data JPA</span>
+            <span class="skill-item">MapStruct</span>
+            <span class="skill-item">Liquibase</span>
+            <span class="skill-item">Dropwizard</span>
+            <span class="skill-item">REST / OpenAPI</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-label blue">Frontend</div>
+          <div class="skill-items">
             <span class="skill-item">React</span>
+            <span class="skill-item">Next.js</span>
+            <span class="skill-item">Tailwind CSS</span>
+            <span class="skill-item">TanStack Query</span>
             <span class="skill-item">React Flow</span>
-            <span class="skill-item">DropWizard</span>
-            <span class="skill-item">Maven</span>
+            <span class="skill-item">next-intl</span>
+            <span class="skill-item">Orval / MSW</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-label orange">Databases</div>
+          <div class="skill-items">
+            <span class="skill-item">PostgreSQL</span>
+            <span class="skill-item">PL/pgSQL / RLS</span>
+            <span class="skill-item">Supabase</span>
+            <span class="skill-item">MongoDB</span>
+            <span class="skill-item">Oracle DB</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-label rose">Testing &amp; Quality</div>
+          <div class="skill-items">
+            <span class="skill-item">JUnit 5</span>
+            <span class="skill-item">Testcontainers</span>
+            <span class="skill-item">REST Assured</span>
+            <span class="skill-item">pgTAP</span>
+            <span class="skill-item">Jest / Vitest</span>
+            <span class="skill-item">TDD</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-label">Cloud &amp; DevOps</div>
+          <div class="skill-items">
+            <span class="skill-item">Docker</span>
+            <span class="skill-item">Kubernetes</span>
+            <span class="skill-item">GitHub Actions</span>
+            <span class="skill-item">Cloudflare Workers</span>
+            <span class="skill-item">OCI</span>
+            <span class="skill-item">CI/CD</span>
           </div>
         </div>
 
@@ -316,8 +508,8 @@
             <span class="skill-item">JVM Internals</span>
             <span class="skill-item">JDK Development</span>
             <span class="skill-item">jtreg</span>
-            <span class="skill-item">LTS Management</span>
-            <span class="skill-item">Backporting</span>
+            <span class="skill-item">LTS Backporting</span>
+            <span class="skill-item">Patch Analysis</span>
             <span class="skill-item">Compiler Design</span>
           </div>
         </div>
@@ -325,34 +517,12 @@
         <div class="skill-group">
           <div class="skill-group-label orange">AI &amp; Agents</div>
           <div class="skill-items">
+            <span class="skill-item">AI Agent Design</span>
             <span class="skill-item">MCP Servers</span>
             <span class="skill-item">Agent Skills</span>
-            <span class="skill-item">Multi-Platform Adapters</span>
+            <span class="skill-item">Claude Code</span>
+            <span class="skill-item">Copilot / Cursor / Codex</span>
             <span class="skill-item">Agentic Workflows</span>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <div class="skill-group-label rose">Infrastructure</div>
-          <div class="skill-items">
-            <span class="skill-item">Docker</span>
-            <span class="skill-item">Kubernetes</span>
-            <span class="skill-item">CI/CD</span>
-            <span class="skill-item">OCI</span>
-            <span class="skill-item">OpenGrok</span>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <div class="skill-group-label">Databases &amp; Tools</div>
-          <div class="skill-items">
-            <span class="skill-item">PostgreSQL</span>
-            <span class="skill-item">Oracle DB</span>
-            <span class="skill-item">Liquibase</span>
-            <span class="skill-item">Git</span>
-            <span class="skill-item">GitHub Apps</span>
-            <span class="skill-item">GitLab API</span>
-            <span class="skill-item">Jira API</span>
           </div>
         </div>
       </div>
@@ -363,7 +533,7 @@
   <section class="section" id="education">
     <div class="container">
       <div class="fade-up">
-        <div class="section-label"><span class="section-num">// 04.</span> Education</div>
+        <div class="section-label"><span class="section-num">// 05.</span> Education</div>
         <h2 class="section-title">Where I Studied</h2>
       </div>
 
@@ -388,9 +558,9 @@
   <section class="section" id="github">
     <div class="container">
       <div class="fade-up">
-        <div class="section-label"><span class="section-num">// 05.</span> Open Source</div>
+        <div class="section-label"><span class="section-num">// 06.</span> GitHub</div>
         <h2 class="section-title">GitHub Activity</h2>
-        <p class="section-desc">Contribution graph from the last year. Most work happens on Oracle's internal GitLab, but here's what's public.</p>
+        <p class="section-desc">Contribution graph from the last year. Most of my work lives on Oracle's internal GitLab and in Fladeed's private repositories, but here's what's public.</p>
       </div>
 
       <div class="github-activity fade-up">
@@ -412,9 +582,9 @@
   <section class="section contact-section" id="contact">
     <div class="container">
       <div class="fade-up">
-        <div class="section-label"><span class="section-num">// 06.</span> Contact</div>
+        <div class="section-label"><span class="section-num">// 07.</span> Contact</div>
         <h2 class="section-title">Let's Connect</h2>
-        <p class="section-desc">Open to opportunities, collaborations, and interesting conversations about engineering, tooling, and open source.</p>
+        <p class="section-desc">Open to opportunities, product collaborations, and conversations about shipping software, developer tooling, and open source.</p>
       </div>
 
       <div class="contact-buttons fade-up">
@@ -437,9 +607,9 @@
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
           GitHub
         </a>
-        <a href="https://mimounghordou.com" class="contact-link">
+        <a href="https://tajirpro.ma" target="_blank" rel="noopener noreferrer" class="contact-link">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
-          mimounghordou.com
+          tajirpro.ma
         </a>
       </div>
     </div>
@@ -452,7 +622,7 @@
         Built by <a href="https://github.com/ghmaimon" target="_blank" rel="noopener noreferrer">Mimoun Ghordou</a> · &copy; 2026
       </p>
       <p class="footer-source">
-        <a href="https://github.com/ghmaimon/mimounghordou.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/ghmaimon/mimounghordou.dev" target="_blank" rel="noopener noreferrer">
           <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
           View Source
         </a>
